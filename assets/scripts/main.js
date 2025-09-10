@@ -1,10 +1,10 @@
-// Scroll to Top Button and Sticky Navbar Functionality
-document.addEventListener('DOMContentLoaded', function() {
+// Scroll to Top Button and Navbar Shadow Functionality
+document.addEventListener('DOMContentLoaded', function () {
     const scrollToTopBtn = document.getElementById('scrollToTop');
     const navbar = document.getElementById('navbar');
     
-    // Show/hide button and handle sticky navbar based on scroll position
-    window.addEventListener('scroll', function() {
+    // Show/hide button and navbar shadow based on scroll position
+    window.addEventListener('scroll', function () {
         const scrollY = window.pageYOffset;
         
         // Scroll to top button
@@ -14,16 +14,16 @@ document.addEventListener('DOMContentLoaded', function() {
             scrollToTopBtn.classList.remove('show');
         }
         
-        // Sticky navbar - activate when scrolling past navbar
-        if (scrollY > 100) {
-            navbar.classList.add('sticky');
+        // Navbar shadow - appears when scrolled
+        if (scrollY > 50) {
+            navbar.classList.add('scrolled');
         } else {
-            navbar.classList.remove('sticky');
+            navbar.classList.remove('scrolled');
         }
     });
     
     // Smooth scroll to top when button is clicked
-    scrollToTopBtn.addEventListener('click', function() {
+    scrollToTopBtn.addEventListener('click', function () {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'

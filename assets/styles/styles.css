@@ -67,34 +67,26 @@ img {
     isolation: isolate;
 }
 
-/* Navbar Styles */
+/* Navbar Styles - Using native CSS sticky positioning */
 .navbar-section {
     background: white;
     padding: 20px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     transition: all 0.3s ease;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0); /* Start with no shadow */
+}
+
+/* Shadow appears when navbar is stuck (scrolled) */
+.navbar-section.scrolled {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
 }
 
 .navbar-section .container {
     max-width: 1450px;
     margin: 0 auto;
     padding: 0 20px;
-}
-
-/* Sticky Navbar */
-#navbar.sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    z-index: 1000;
-    padding: 15px 0;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
-}
-
-#navbar.sticky .vb-logo {
-    height: 55px;
 }
 
 /* top-left logo */
