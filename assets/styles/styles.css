@@ -1119,4 +1119,55 @@
     margin-top: auto;
 }
 
+/* SCROLL TO TOP BUTTON */
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    background: var(--vb-blue);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(11, 99, 166, 0.3);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+}
 
+.scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.scroll-to-top:hover {
+    background: var(--vb-orange);
+    box-shadow: 0 6px 16px rgba(11, 99, 166, 0.4);
+}
+
+.scroll-to-top i {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Responsive adjustments for scroll to top button */
+@media (max-width: 768px) {
+    .scroll-to-top {
+        width: 45px;
+        height: 45px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .scroll-to-top i {
+        font-size: 18px;
+    }
+}
