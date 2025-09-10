@@ -52,11 +52,9 @@
                             <h2 class="section-title">Personal Details</h2>
 
                             <form id="registrationForm" class="registration-form">
-                                <!-- 👇 add form-grid -->
                                 <div class="row g-4 form-grid">
-
-                                    <!-- Name of Participant -->
-                                    <div class="col-md-4">
+                                    <!-- Row 1 -->
+                                    <div class=" participant">
                                         <div class="form-group">
                                             <label for="participantName" class="form-label">Name of Participant</label>
                                             <input type="text" class="form-control" id="participantName"
@@ -64,8 +62,7 @@
                                         </div>
                                     </div>
 
-                                    <!-- Date of Birth -->
-                                    <div class="col-md-4">
+                                    <div class=" dob">
                                         <div class="form-group">
                                             <label for="dateOfBirth" class="form-label">Date of Birth</label>
                                             <input type="date" class="form-control" id="dateOfBirth" name="dateOfBirth"
@@ -73,8 +70,7 @@
                                         </div>
                                     </div>
 
-                                    <!-- Gender -->
-                                    <div class="col-md-4">
+                                    <div class=" gender">
                                         <div class="form-group">
                                             <label for="gender" class="form-label">Gender</label>
                                             <select class="form-select" id="gender" name="gender" required>
@@ -86,8 +82,8 @@
                                         </div>
                                     </div>
 
-                                    <!-- Father's Name -->
-                                    <div class="col-md-4">
+                                    <!-- Row 2 -->
+                                    <div class=" f-name">
                                         <div class="form-group">
                                             <label for="fatherName" class="form-label">Father's Name</label>
                                             <input type="text" class="form-control" id="fatherName" name="fatherName"
@@ -95,8 +91,7 @@
                                         </div>
                                     </div>
 
-                                    <!-- Mother's Name -->
-                                    <div class="col-md-4">
+                                    <div class=" m-name">
                                         <div class="form-group">
                                             <label for="motherName" class="form-label">Mother's Name</label>
                                             <input type="text" class="form-control" id="motherName" name="motherName"
@@ -104,18 +99,17 @@
                                         </div>
                                     </div>
 
-                                    <!-- Complete Address (👈 spans two rows) -->
-                                    <div class="col-md-4 row-span-2">
+                                    <!-- Address spans Row 2 & Row 3 -->
+                                    <div class=" address">
                                         <div class="form-group stretch">
                                             <label for="completeAddress" class="form-label">Complete Address</label>
-                                            <textarea class="form-control flex-fill" id="completeAddress"
-                                                name="completeAddress" placeholder="Complete Address"
-                                                required></textarea>
+                                            <textarea class="form-control" id="completeAddress" name="completeAddress"
+                                                placeholder="Complete Address" required></textarea>
                                         </div>
                                     </div>
 
-                                    <!-- Father's Phone Number -->
-                                    <div class="col-md-4">
+                                    <!-- Row 3 -->
+                                    <div class=" f-phone">
                                         <div class="form-group">
                                             <label for="fatherPhone" class="form-label">Father's Phone Number</label>
                                             <input type="tel" class="form-control" id="fatherPhone" name="fatherPhone"
@@ -123,8 +117,16 @@
                                         </div>
                                     </div>
 
-                                    <!-- Personal Phone Number -->
-                                    <div class="col-md-4">
+                                    <div class=" m-phone">
+                                        <div class="form-group">
+                                            <label for="motherPhone" class="form-label">Mother's Phone Number</label>
+                                            <input type="tel" class="form-control" id="motherPhone" name="motherPhone"
+                                                placeholder="Mother's Phone Number" required>
+                                        </div>
+                                    </div>
+
+                                    <!-- Row 4 -->
+                                    <div class=" p-phone">
                                         <div class="form-group">
                                             <label for="personalPhone" class="form-label">Personal Phone Number</label>
                                             <input type="tel" class="form-control" id="personalPhone"
@@ -132,15 +134,13 @@
                                         </div>
                                     </div>
 
-                                    <!-- Personal Mail ID -->
-                                    <div class="col-md-4">
+                                    <div class=" p-mail">
                                         <div class="form-group">
                                             <label for="personalEmail" class="form-label">Personal Mail ID</label>
                                             <input type="email" class="form-control" id="personalEmail"
                                                 name="personalEmail" placeholder="Personal Mail ID" required>
                                         </div>
                                     </div>
-
                                 </div>
                             </form>
                         </section>
@@ -250,9 +250,11 @@
                         <section class="form-section identification">
                             <h2 class="section-title">Identification & Verification</h2>
 
-                            <div class="row g-4">
-                                <!-- Aadhaar Card Number -->
-                                <div class="col-md-4">
+                            <!-- custom grid (no .row / .col inside) -->
+                            <div class="id-grid">
+
+                                <!-- Row 1, Col 1 -->
+                                <div class="a-number">
                                     <div class="form-group">
                                         <label for="aadhaarNumber" class="form-label">Aadhaar Card Number</label>
                                         <input type="text" class="form-control" id="aadhaarNumber" name="aadhaarNumber"
@@ -261,8 +263,8 @@
                                     </div>
                                 </div>
 
-                                <!-- Aadhaar Card Photo Upload -->
-                                <div class="col-md-4">
+                                <!-- Col 2 (spans 2 rows) -->
+                                <div class="a-photo">
                                     <div class="form-group">
                                         <label for="aadhaarPhoto" class="form-label">Aadhaar Card Photo</label>
                                         <div class="file-upload-wrapper">
@@ -276,8 +278,8 @@
                                     </div>
                                 </div>
 
-                                <!-- University ID Card Photo Upload -->
-                                <div class="col-md-4">
+                                <!-- Col 3 (spans 2 rows) -->
+                                <div class="u-photo">
                                     <div class="form-group">
                                         <label for="universityIdPhoto" class="form-label">University ID Card
                                             Photo</label>
@@ -292,14 +294,15 @@
                                     </div>
                                 </div>
 
-                                <!-- Zone -->
-                                <div class="col-md-4">
+                                <!-- Row 2, Col 1 -->
+                                <div class="zone">
                                     <div class="form-group">
                                         <label for="zone" class="form-label">Zone</label>
                                         <input type="text" class="form-control zone-input" id="zone" name="zone"
                                             placeholder="Zone" required>
                                     </div>
                                 </div>
+
                             </div>
                         </section>
 

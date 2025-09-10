@@ -444,3 +444,124 @@ textarea.form-control {
 
 
 
+/* Personal Details grid */
+.form-section.personal .form-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: var(--bs-gutter-x, 2rem);
+    row-gap: var(--bs-gutter-y, 1.7rem);
+}
+
+/* kill Bootstrap column padding inside this grid */
+.form-section.personal .form-grid>[class*="col-"] {
+    padding: 0;
+    margin: 0;
+}
+
+/* Explicit placement */
+.form-section.personal .participant {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.form-section.personal .dob {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.form-section.personal .gender {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.form-section.personal .f-name {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.form-section.personal .m-name {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.form-section.personal .address {
+    grid-column: 3;
+    grid-row: 2 / span 2;
+}
+
+.form-section.personal .f-phone {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.form-section.personal .m-phone {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.form-section.personal .p-phone {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+/* make Personal Mail span columns 2 & 3 on row 4 */
+.form-section.personal .p-mail {
+    grid-column: 2 / span 1;
+    grid-row: 4;
+}
+
+/* make the address textarea fill the tall cell */
+.form-section.personal .address .stretch {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-section.personal .address textarea {
+    flex: 1 1 auto;
+    min-height: 0;
+}
+
+
+/* --- Identification grid --- */
+.form-section.identification .id-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: var(--bs-gutter-x, 2rem);
+    row-gap: var(--bs-gutter-y, 1.7rem);
+}
+
+/* Explicit placement */
+.form-section.identification .a-number {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.form-section.identification .a-photo {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+}
+
+.form-section.identification .u-photo {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+}
+
+.form-section.identification .zone {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+/* Make the upload cards fill the tall cells */
+.form-section.identification .a-photo .form-group,
+.form-section.identification .u-photo .form-group {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-section.identification .file-upload-wrapper {
+    flex: 1 1 auto;
+    /* grow to fill the cell height */
+    min-height: 150px;
+}
