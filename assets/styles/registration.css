@@ -1,0 +1,446 @@
+@import url("./styles.css");
+
+
+/* ===== Portal header (scoped, won't clash with Bootstrap) ===== */
+:root {
+    --portal-blue: #165f9c;
+    --portal-red: #ef233c;
+    /* bright red for the pill */
+}
+
+.portal-container {
+    width: 1400px;
+    margin-inline: auto;
+}
+
+.portal-header {
+    background: var(--portal-blue);
+    color: #fff;
+}
+
+.portal-header-bar {
+    padding: 20px 0 35px;
+}
+
+.portal-brand img {
+    height: 60px;
+    /* adjust to your logo */
+    width: auto;
+    display: block;
+}
+
+.portal-call {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--portal-red);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 14px;
+    padding-block: 12px;
+    box-shadow: 0 10px 20px rgba(239, 35, 60, .25);
+    font-size: 19px;
+    font-family: var(--font-inter-bold);
+    font-weight: bold;
+    transition: background .3s, filter .3s;
+}
+
+.portal-call:hover {
+    filter: brightness(1.05);
+    background: #c73649;
+}
+
+.portal-title {
+    margin: 14px 0 4px;
+    text-align: center;
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: .2px;
+    font-size: 52px;
+    font-family: var(--font-bold);
+}
+
+
+
+
+
+/* Registration Main Content */
+.registration-main {
+    background: #f9f6f1;
+    min-height: calc(100vh - 200px);
+    padding: 40px 0;
+}
+
+.registration-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Form Card */
+.registration-form-card {
+    background: #CAE6FF;
+    border-radius: 20px;
+    padding: 70px 80px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin: 0 0;
+}
+
+/* Section Styling */
+.form-section {
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-family: var(--font-bold);
+    font-size: 32px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+
+/* Form Styling */
+.registration-form .row {
+    --bs-gutter-x: 2rem;
+    --bs-gutter-y: 1.7rem;
+}
+
+.form-group {
+    margin-bottom: 0;
+}
+
+.form-label {
+    font-family: var(--font-regular);
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Input Styling */
+.form-control,
+.form-select {
+    background: white;
+    border: 2px solid #e1e5e9;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-family: var(--font-regular);
+    font-size: 15px;
+    color: #333;
+    transition: all 0.3s ease;
+    min-height: 48px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    background: white;
+}
+
+.form-control::placeholder {
+    color: #999;
+}
+
+/* Textarea specific styling */
+textarea.form-control {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Input Group (Date field) */
+.input-group-text {
+    background: white;
+    border: 2px solid #e1e5e9;
+    border-right: none;
+    color: #666;
+    border-radius: 8px 0 0 8px;
+}
+
+.input-group .form-control {
+    border-left: none;
+    border-radius: 0 8px 8px 0;
+}
+
+.input-group:focus-within .input-group-text {
+    border-color: var(--vb-blue);
+}
+
+/* Select dropdown styling */
+.form-select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px 12px;
+    padding-right: 40px;
+}
+
+/* Invalid/Valid states */
+.form-control.is-invalid,
+.form-select.is-invalid {
+    border-color: #dc3545;
+}
+
+.form-control.is-valid,
+.form-select.is-valid {
+    border-color: #28a745;
+}
+
+.invalid-feedback {
+    font-family: var(--font-regular);
+    font-size: 13px;
+    color: #dc3545;
+    margin-top: 5px;
+}
+
+.valid-feedback {
+    font-family: var(--font-regular);
+    font-size: 13px;
+    color: #28a745;
+    margin-top: 5px;
+}
+
+
+
+/* File Upload Styling */
+.file-upload-wrapper {
+    position: relative;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    background: white;
+    cursor: pointer;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.academic {
+    padding: 50px 0;
+}
+
+.file-upload-wrapper:hover {
+    border-color: var(--vb-blue);
+    background: #f8f9fa;
+}
+
+.file-input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.file-upload-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    pointer-events: none;
+}
+
+.file-upload-display i {
+    font-size: 32px;
+    color: #666;
+}
+
+.file-upload-display span {
+    font-family: var(--font-regular);
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
+
+/* When file is selected */
+.file-upload-wrapper.has-file {
+    border-color: var(--vb-blue);
+    background: #e3f2fd;
+}
+
+.file-upload-wrapper.has-file .file-upload-display i {
+    color: var(--vb-blue);
+}
+
+.file-upload-wrapper.has-file .file-upload-display span {
+    color: var(--vb-blue);
+    font-weight: 600;
+}
+
+/* File upload responsive */
+@media (max-width: 768px) {
+    .file-upload-wrapper {
+        min-height: 80px;
+        padding: 15px;
+    }
+
+    .file-upload-display i {
+        font-size: 24px;
+    }
+
+    .file-upload-display span {
+        font-size: 12px;
+    }
+}
+
+
+
+/* Identification Section */
+.identification {
+    padding: 0 0;
+}
+
+
+
+.zone-input:focus {
+    box-shadow: 0 0 0 0.2rem rgba(19, 95, 190, 0.25) !important;
+}
+
+/* University Contact Section */
+.university-contact {
+    padding: 30px 0;
+}
+
+/* Video Upload Section */
+.video-upload {
+    padding: 30px 0;
+}
+
+.video-upload-area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.video-upload-wrapper {
+    position: relative;
+    width: 300px;
+    height: 150px;
+    border: 2px dashed #ccc;
+    border-radius: 12px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.video-upload-wrapper:hover {
+    border-color: var(--vb-blue);
+    background: #f8f9fa;
+}
+
+.video-input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.video-upload-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    pointer-events: none;
+}
+
+.video-upload-display i {
+    font-size: 48px;
+    color: #666;
+}
+
+.upload-text {
+    font-family: var(--font-regular);
+    color: #666;
+}
+
+.upload-main {
+    font-size: 14px;
+}
+
+.choose-files {
+    color: var(--vb-blue);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.upload-info {
+    margin-top: 10px;
+    font-family: var(--font-regular);
+}
+
+.upload-info small {
+    color: var(--vb-blue);
+    font-size: 13px;
+}
+
+/* When video file is selected */
+.video-upload-wrapper.has-file {
+    border-color: var(--vb-blue);
+    background: #e3f2fd;
+}
+
+.video-upload-wrapper.has-file .video-upload-display i {
+    color: var(--vb-blue);
+}
+
+.video-upload-wrapper.has-file .upload-main {
+    color: var(--vb-blue);
+    font-weight: 600;
+}
+
+/* Submit Button Section */
+.form-submit-section {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.submit-btn {
+    background: var(--vb-blue);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 18px 50px;
+    font-family: var(--font-bold);
+    font-size: 20px;
+    font-weight: 700;
+    width: 100%;
+    max-width: 400px;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(22, 95, 156, 0.3);
+}
+
+.submit-btn:hover {
+    background: #0e4a7d;
+    box-shadow: 0 8px 25px rgba(22, 95, 156, 0.4);
+    color: white;
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+
+/* --- Personal Details grid alignment --- */
+
+
+/* remove flexbox spacing behavior from Bootstrap cols in this grid */
+
+
+/* Make the address box span two rows */
+.form-section.personal .row-span-2 {
+    grid-row: span 2;
+}
+
+
+
+

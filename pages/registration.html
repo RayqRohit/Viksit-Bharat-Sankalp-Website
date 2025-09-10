@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portal | Viksit Bharat Sankalp</title>
+    <!-- Remix Icons (for phone icon) -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/styles/registration.css">
+
+</head>
+
+<body>
+
+    <header class="portal-header">
+        <div class="portal-header-bar">
+            <div class="portal-container d-flex align-items-center justify-content-between">
+                <!-- Left: PU + NAAC logo (single image) -->
+                <a href="#" class="portal-brand" aria-label="Parul University">
+                    <!-- use your combined logo image -->
+                    <img src="../assets/images/portal-logo.png" alt="Parul University • NAAC Grade A++">
+                </a>
+
+                <!-- Right: Call pill -->
+                <a class="portal-call px-4" href="tel:18008899773" aria-label="Call 1800-889-9773">
+                    <i class="ri-phone-line"></i>
+                    <span>1800-889-9773</span>
+                </a>
+            </div>
+
+            <!-- Centered title -->
+            <div class="portal-container">
+                <h1 class="portal-title">Registration Portal</h1>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <!-- Personal Details Form Section -->
+    <main class="registration-main">
+        <div class="registration-container">
+            <div class="row justify-content-center">
+                <div class="">
+                    <div class="registration-form-card">
+                        <!-- Personal Details Section -->
+                        <section class="form-section personal">
+                            <h2 class="section-title">Personal Details</h2>
+
+                            <form id="registrationForm" class="registration-form">
+                                <!-- 👇 add form-grid -->
+                                <div class="row g-4 form-grid">
+
+                                    <!-- Name of Participant -->
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="participantName" class="form-label">Name of Participant</label>
+                                            <input type="text" class="form-control" id="participantName"
+                                                name="participantName" placeholder="Name of Participant" required>
+                                        </div>
+                                    </div>
+
+                                    <!-- Date of Birth -->
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="dateOfBirth" class="form-label">Date of Birth</label>
+                                            <input type="date" class="form-control" id="dateOfBirth" name="dateOfBirth"
+                                                placeholder="dd/mm/yyyy" required>
+                                        </div>
+                                    </div>
+
+                                    <!-- Gender -->
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="gender" class="form-label">Gender</label>
+                                            <select class="form-select" id="gender" name="gender" required>
+                                                <option value="" disabled selected>Gender</option>
+                                                <option value="male">Male</option>
+                                                <option value="female">Female</option>
+                                                <option value="other">Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <!-- Father's Name -->
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="fatherName" class="form-label">Father's Name</label>
+                                            <input type="text" class="form-control" id="fatherName" name="fatherName"
+                                                placeholder="Father's Name" required>
+                                        </div>
+                                    </div>
+
+                                    <!-- Mother's Name -->
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="motherName" class="form-label">Mother's Name</label>
+                                            <input type="text" class="form-control" id="motherName" name="motherName"
+                                                placeholder="Mother's Name" required>
+                                        </div>
+                                    </div>
+
+                                    <!-- Complete Address (👈 spans two rows) -->
+                                    <div class="col-md-4 row-span-2">
+                                        <div class="form-group stretch">
+                                            <label for="completeAddress" class="form-label">Complete Address</label>
+                                            <textarea class="form-control flex-fill" id="completeAddress"
+                                                name="completeAddress" placeholder="Complete Address"
+                                                required></textarea>
+                                        </div>
+                                    </div>
+
+                                    <!-- Father's Phone Number -->
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="fatherPhone" class="form-label">Father's Phone Number</label>
+                                            <input type="tel" class="form-control" id="fatherPhone" name="fatherPhone"
+                                                placeholder="Father's Phone Number" required>
+                                        </div>
+                                    </div>
+
+                                    <!-- Personal Phone Number -->
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="personalPhone" class="form-label">Personal Phone Number</label>
+                                            <input type="tel" class="form-control" id="personalPhone"
+                                                name="personalPhone" placeholder="Personal Phone Number" required>
+                                        </div>
+                                    </div>
+
+                                    <!-- Personal Mail ID -->
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="personalEmail" class="form-label">Personal Mail ID</label>
+                                            <input type="email" class="form-control" id="personalEmail"
+                                                name="personalEmail" placeholder="Personal Mail ID" required>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </section>
+
+
+                        <!-- Academic Details Section -->
+                        <section class="form-section academic">
+                            <h2 class="section-title">Academic Details</h2>
+
+                            <div class="row g-4">
+                                <!-- File Upload Row 1 -->
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="schoolLeavingCert" class="form-label">School Leaving
+                                            Certificate</label>
+                                        <div class="file-upload-wrapper">
+                                            <input type="file" class="form-control file-input" id="schoolLeavingCert"
+                                                name="schoolLeavingCert" accept=".pdf,.jpg,.jpeg,.png" required>
+                                            <div class="file-upload-display">
+                                                <i class="ri-attachment-2"></i>
+                                                <span>Upload School Leaving Certificate</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="birthCertificate" class="form-label">Birth Certificate</label>
+                                        <div class="file-upload-wrapper">
+                                            <input type="file" class="form-control file-input" id="birthCertificate"
+                                                name="birthCertificate" accept=".pdf,.jpg,.jpeg,.png" required>
+                                            <div class="file-upload-display">
+                                                <i class="ri-attachment-2"></i>
+                                                <span>Upload Birth Certificate</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="marksheet1012" class="form-label">10th / 12th Marksheet</label>
+                                        <div class="file-upload-wrapper">
+                                            <input type="file" class="form-control file-input" id="marksheet1012"
+                                                name="marksheet1012" accept=".pdf,.jpg,.jpeg,.png" required>
+                                            <div class="file-upload-display">
+                                                <i class="ri-attachment-2"></i>
+                                                <span>10th / 12th Marksheet</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Regular Input Row 2 -->
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="marksheetDetails" class="form-label">10th / 12th Marksheet</label>
+                                        <input type="text" class="form-control" id="marksheetDetails"
+                                            name="marksheetDetails" placeholder="10th / 12th Marksheet" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="collegeYear" class="form-label">College Year</label>
+                                        <input type="text" class="form-control" id="collegeYear" name="collegeYear"
+                                            placeholder="College Year" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="programOfStudy" class="form-label">Program of Study</label>
+                                        <select class="form-select" id="programOfStudy" name="programOfStudy" required>
+                                            <option value="" disabled selected>Program of Study</option>
+                                            <option value="engineering">Engineering</option>
+                                            <option value="medical">Medical</option>
+                                            <option value="arts">Arts</option>
+                                            <option value="science">Science</option>
+                                            <option value="commerce">Commerce</option>
+                                            <option value="management">Management</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- Regular Input Row 3 -->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="courseName" class="form-label">Name of the Course</label>
+                                        <input type="text" class="form-control" id="courseName" name="courseName"
+                                            placeholder="Name of the Course" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="enrollmentNumber" class="form-label">Enrollment Number</label>
+                                        <input type="text" class="form-control" id="enrollmentNumber"
+                                            name="enrollmentNumber" placeholder="Enrollment Number" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="form-section identification">
+                            <h2 class="section-title">Identification & Verification</h2>
+
+                            <div class="row g-4">
+                                <!-- Aadhaar Card Number -->
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="aadhaarNumber" class="form-label">Aadhaar Card Number</label>
+                                        <input type="text" class="form-control" id="aadhaarNumber" name="aadhaarNumber"
+                                            placeholder="Aadhaar Card Number" maxlength="12" pattern="[0-9]{12}"
+                                            required>
+                                    </div>
+                                </div>
+
+                                <!-- Aadhaar Card Photo Upload -->
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="aadhaarPhoto" class="form-label">Aadhaar Card Photo</label>
+                                        <div class="file-upload-wrapper">
+                                            <input type="file" class="form-control file-input" id="aadhaarPhoto"
+                                                name="aadhaarPhoto" accept=".pdf,.jpg,.jpeg,.png" required>
+                                            <div class="file-upload-display">
+                                                <i class="ri-image-line"></i>
+                                                <span>Upload Aadhaar Card Photo</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- University ID Card Photo Upload -->
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="universityIdPhoto" class="form-label">University ID Card
+                                            Photo</label>
+                                        <div class="file-upload-wrapper">
+                                            <input type="file" class="form-control file-input" id="universityIdPhoto"
+                                                name="universityIdPhoto" accept=".pdf,.jpg,.jpeg,.png" required>
+                                            <div class="file-upload-display">
+                                                <i class="ri-image-line"></i>
+                                                <span>Upload University ID Card Photo</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Zone -->
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="zone" class="form-label">Zone</label>
+                                        <input type="text" class="form-control zone-input" id="zone" name="zone"
+                                            placeholder="Zone" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- University Contact Details Section -->
+                        <section class="form-section university-contact">
+                            <h2 class="section-title">University Contact Details</h2>
+
+                            <div class="row g-4">
+                                <!-- University Name -->
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="universityName" class="form-label">University Name</label>
+                                        <input type="text" class="form-control" id="universityName"
+                                            name="universityName" placeholder="University Name" required>
+                                    </div>
+                                </div>
+
+                                <!-- University Phone Number -->
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="universityPhone" class="form-label">University Phone Number</label>
+                                        <input type="tel" class="form-control" id="universityPhone"
+                                            name="universityPhone" placeholder="University Phone Number" required>
+                                    </div>
+                                </div>
+
+                                <!-- University Mail ID -->
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="universityEmail" class="form-label">University Mail ID</label>
+                                        <input type="email" class="form-control" id="universityEmail"
+                                            name="universityEmail" placeholder="University Mail ID" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Video Upload Section -->
+                        <section class="form-section video-upload">
+                            <h2 class="section-title">Video Upload</h2>
+
+                            <div class="video-upload-area">
+                                <div class="video-upload-wrapper">
+                                    <input type="file" class="video-input" id="videoFile" name="videoFile"
+                                        accept=".mp4,.avi,.mov,.wmv" required>
+                                    <div class="video-upload-display">
+                                        <i class="ri-cloud-upload-line"></i>
+                                        <div class="upload-text">
+                                            <span class="upload-main">Drop your files here or <span
+                                                    class="choose-files">choose files</span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="upload-info">
+                                    <small class="text-muted">Size Limit Maximum 10 MB *</small>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Submit Button -->
+                        <div class="form-submit-section">
+                            <button type="submit" class="btn submit-btn" id="submitForm">
+                                Submit
+                            </button>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/scripts/registration.js"></script>
+</body>
+
+</html>
