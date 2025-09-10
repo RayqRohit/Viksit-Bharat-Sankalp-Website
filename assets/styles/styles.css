@@ -55,6 +55,9 @@
     padding: 0 20px;
 }
 
+img {
+    user-select: none;
+}
 
 /* header */
 .vb-hero {
@@ -64,37 +67,39 @@
     isolation: isolate;
 }
 
-/* Sticky Navbar */
-#navbar {
-    transition: all 0.3s ease-in-out;
+/* Navbar Styles */
+.navbar-section {
+    background: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
+.navbar-section .container {
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Sticky Navbar */
 #navbar.sticky {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
-    background: white;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    padding: 10px 0 !important;
-    max-width: none !important;
-}
-
-#navbar.sticky>div {
-    max-width: 1450px;
-    margin: 0 auto;
-    padding: 0 20px;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
 }
 
 #navbar.sticky .vb-logo {
-    height: 50px;
+    height: 55px;
 }
 
 /* top-left logo */
 .vb-logo {
-    height: 65px;
+    height: 60px;
     /* adjust to your logo */
     width: auto;
 }
@@ -617,6 +622,9 @@
 .format-section {
     background: #fff;
     padding: 80px 0 40px;
+
+    position: relative;
+    z-index: -3;
 }
 
 /* Title with side lines */
@@ -952,6 +960,7 @@
     background: linear-gradient(135deg, #1e6fbe 0%, #0e58a1 55%, #0b4686 100%);
     box-shadow: 0 12px 28px rgba(0, 0, 0, .12);
     color: #fff;
+    z-index: 0;
 }
 
 /* left copy */
@@ -974,6 +983,7 @@
     font-size: 25px;
     transition: background .2s ease;
     font-family: var(--font-inter-bold);
+    cursor: pointer;
 }
 
 .reg-btn:hover {
@@ -1025,6 +1035,7 @@
     /* Remove bottom padding */
     position: relative;
     /* Add position relative */
+    z-index: 0;
 }
 
 /* Title with Lines */
@@ -1131,6 +1142,9 @@
     color: var(--vb-blue);
     text-decoration: none;
     transition: color 0.3s ease;
+    position: relative;
+    z-index: 10;
+    pointer-events: auto;
 }
 
 .contact-value a:hover,

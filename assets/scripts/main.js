@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
             scrollToTopBtn.classList.remove('show');
         }
         
-        // Sticky navbar
-        if (scrollY > 150) {
+        // Sticky navbar - activate when scrolling past navbar
+        if (scrollY > 100) {
             navbar.classList.add('sticky');
         } else {
             navbar.classList.remove('sticky');

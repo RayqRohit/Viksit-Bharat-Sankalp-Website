@@ -8,6 +8,11 @@
     /* bright red for the pill */
 }
 
+img {
+    user-select: none;
+}
+
+
 .portal-container {
     width: 1400px;
     margin-inline: auto;
