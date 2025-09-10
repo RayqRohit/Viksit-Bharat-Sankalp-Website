@@ -1,0 +1,639 @@
+/* 1) ≥ 1440px -------------------------------------------------- */
+@media (min-width: 1440px) {
+    .navbar-section {
+        padding: 22px 0;
+    }
+
+    .container-new {
+        max-width: 1470px;
+    }
+
+    .vb-call {
+        padding: 12px 18px;
+        font-size: 20px;
+        border-radius: 14px;
+    }
+
+    .vb-call i {
+        font-size: 22px;
+    }
+
+
+}
+
+/* 2) 1200px–1399.98px ----------------------------------------- */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .navbar-section {
+        padding: 18px 0;
+    }
+
+
+    .vb-logo {
+        height: 64px;
+    }
+
+    .vb-call {
+        padding: 10px 16px;
+        font-size: 18px;
+    }
+
+    .vb-call i {
+        font-size: 20px;
+    }
+
+    /* hero section */
+
+    .vb-hero-inner {
+        padding-top: 5rem;
+    }
+
+    .vb-title-1 {
+        font-size: 105px;
+    }
+
+    .vb-title-2 {
+        font-size: 94px;
+    }
+
+    .vb-subtitle,
+    .vb-tagline {
+        font-size: 46px;
+    }
+
+    .vb-caption {
+        font-size: 22px;
+    }
+
+    .vb-person {
+        width: 350px;
+    }
+
+    .vb-bottom-band {
+        height: 150px;
+    }
+
+
+    /* about section */
+
+    .about-pu .col-lg-5,
+    .about-pu .col-lg-7 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    /* Stack content vertically and adjust spacing */
+    .about-pu .col-lg-7 {
+        margin-top: 3.5rem;
+        padding-left: 30px;
+    }
+
+    /* Center the image */
+    .about-pu .col-lg-5 {
+        text-align: center;
+    }
+
+    .about-photo {
+        max-width: 100%;
+        margin: 0 auto;
+        max-height: 500px;
+    }
+
+    /* Other existing styles for this breakpoint */
+    .about-pu {
+        padding: 4rem 0;
+    }
+
+    .about-head .about-icon {
+        width: 75px;
+        height: 75px;
+    }
+
+    .about-head .about-icon i {
+        font-size: 30px;
+    }
+
+    .about-eyebrow {
+        font-size: 40px;
+        gap: 40px;
+    }
+
+    .about-eyebrow::after {
+        width: 200px;
+    }
+
+    .about-title {
+        font-size: 40px;
+    }
+
+    .about-copy {
+        font-size: 17px;
+        margin-top: 16px;
+    }
+
+    .about-copy p {
+        margin-bottom: 16px;
+    }
+
+    .section-container {
+
+        padding: 0 10px;
+    }
+
+
+}
+
+/* 3) 992px–1199.98px ------------------------------------------ */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .navbar-section {
+        padding: 16px 0;
+    }
+
+    .vb-logo {
+        height: 58px;
+    }
+
+    .vb-call {
+        padding: 10px 14px;
+        font-size: 16px;
+    }
+
+    .vb-call i {
+        font-size: 19px;
+    }
+
+    .navbar-section .d-flex {
+        gap: 14px;
+    }
+
+
+    /* hero section */
+
+    .vb-hero {
+        height: 90vh;
+    }
+
+    .vb-hero-inner {
+        padding-top: 2.5rem;
+    }
+
+    .vb-title-1 {
+        font-size: 86px;
+    }
+
+    .vb-title-2 {
+        font-size: 78px;
+    }
+
+    .vb-subtitle,
+    .vb-tagline {
+        font-size: 36px;
+    }
+
+    .vb-caption {
+        font-size: 20px;
+    }
+
+    .vb-person {
+        width: 300px;
+    }
+
+    .vb-bottom-band {
+        height: 140px;
+    }
+
+    /* about section */
+
+    .about-pu .col-lg-5,
+    .about-pu .col-lg-7 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    /* Stack content vertically and adjust spacing */
+    .about-pu .col-lg-7 {
+        margin-top: 3.5rem;
+    }
+
+    /* Center the image */
+    .about-pu .col-lg-5 {
+        text-align: center;
+    }
+
+    .about-photo {
+        max-width: 100%;
+        margin: 0 auto;
+        max-height: 400px;
+    }
+}
+
+/* 4) 768px–991.98px ------------------------------------------- */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .container,
+    .container-md,
+    .container-sm {
+        max-width: 100%;
+    }
+
+    .navbar-section {
+        padding: 14px 0;
+    }
+
+    .vb-logo {
+        height: 52px;
+    }
+
+    .vb-call {
+        padding: 10px 12px;
+        font-size: 15px;
+        border-radius: 10px;
+    }
+
+    .vb-call i {
+        font-size: 18px;
+    }
+
+    .navbar-section .d-flex {
+        gap: 12px;
+    }
+
+    /* hero section */
+
+
+    .vb-hero {
+        height: 80vh;
+    }
+
+    .vb-hero-inner {
+        padding-top: 7rem;
+    }
+
+    .vb-title-1 {
+        font-size: 70px;
+    }
+
+    .vb-title-2 {
+        font-size: 70px;
+        margin-bottom: 15px !important;
+    }
+
+    .vb-subtitle,
+    .vb-tagline {
+
+        font-size: 35px;
+    }
+
+    .vb-caption {
+        font-size: 18px;
+    }
+
+    .vb-sankalp {
+        gap: 12px;
+    }
+
+    .vb-flag {
+        width: clamp(70px, 10vw, 110px);
+        height: 46px;
+    }
+
+    .vb-person {
+        width: min(34vw, 260px);
+    }
+
+    .vb-bottom-band {
+        height: 120px;
+    }
+
+
+    /* about */
+
+    .about-pu .col-lg-5,
+    .about-pu .col-lg-7 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    /* Stack content vertically and adjust spacing */
+    .about-pu .col-lg-7 {
+        margin-top: 3.5rem;
+        padding-left: 20px;
+    }
+
+
+
+    /* Center the image */
+    .about-pu .col-lg-5 {
+        text-align: center;
+    }
+
+    .about-photo {
+        max-width: 100%;
+        margin: 0 auto;
+        max-height: 400px;
+    }
+
+    .about-event {
+        padding-top: 20px !important;
+    }
+
+
+}
+
+/* 5) 480px–767.98px ------------------------------------------- */
+@media (min-width: 480px) and (max-width: 767.98px) {
+    .navbar-section {
+        padding: 12px 0;
+    }
+
+    .navbar-section .container {
+        padding: 0 10px;
+    }
+
+
+    .navbar-section .d-flex {
+        gap: 10px;
+        flex-wrap: wrap;
+        /* allow wrap if needed */
+    }
+
+    .vb-logo {
+        height: 40px;
+    }
+
+    .vb-call {
+        padding: 8px 10px !important;
+        font-size: 15px;
+    }
+
+    .vb-call i {
+        font-size: 18px;
+    }
+
+    .container,
+    .container-md,
+    .container-sm {
+        max-width: 100%;
+    }
+
+    /* hero section */
+
+    .vb-hero {
+        height: 80vh;
+    }
+
+    .vb-hero-inner {
+        padding-top: 4.8rem;
+    }
+
+    .vb-title-1 {
+        font-size: 50px;
+    }
+
+    .vb-title-2 {
+        font-size: 50px;
+        margin-bottom: 20px !important;
+    }
+
+    .vb-subtitle,
+    .vb-tagline {
+        font-size: 24px;
+    }
+
+    .vb-caption {
+        font-size: 24px;
+    }
+
+    .vb-sankalp {
+        gap: 10px;
+    }
+
+    .vb-flag {
+        width: clamp(60px, 12vw, 95px);
+        height: 40px;
+    }
+
+    .vb-person {
+        width: 200px;
+
+    }
+
+    .vb-bottom-band {
+        height: 110px;
+    }
+
+
+    /* about  */
+
+    .about-pu {
+        padding-top: 0 !important;
+    }
+
+    .about-pu .col-lg-7 {
+        padding-left: 20px;
+    }
+
+    .about-event .col-lg-7 {
+        padding-right: 20px !important;
+    }
+
+    .about-title {
+        font-size: 1.8rem;
+    }
+
+    .about-eyebrow::after {
+        width: 150px;
+    }
+}
+
+/* 6) 320px–479.98px ------------------------------------------- */
+@media (min-width: 320px) and (max-width: 479.98px) {
+    .navbar-section {
+        padding: 10px 0;
+    }
+
+    .navbar-section .container {
+        padding: 0 10px;
+    }
+
+    .vb-logo {
+        height: 40px;
+    }
+
+    .vb-call {
+        padding: 8px 10px;
+        font-size: 0;
+        border-radius: 10px;
+    }
+
+    .vb-call i {
+        font-size: 20px;
+    }
+
+    .vb-call span {
+        display: none;
+    }
+
+    .container,
+    .container-md,
+    .container-sm {
+        max-width: 100%;
+    }
+
+    /* hero section */
+
+    .vb-hero {
+        height: auto;
+    }
+
+    .vb-hero-inner {
+        padding-top: 3.4rem;
+    }
+
+    .vb-title-1 {
+        font-size: 40px;
+        margin-bottom: 10px !important;
+    }
+
+    .vb-title-2 {
+        font-size: 35px;
+    }
+
+    .vb-subtitle {
+        font-size: 22px;
+        margin-top: 15px;
+    }
+
+    .vb-tagline {
+        font-size: 30px;
+    }
+
+    .vb-caption {
+        font-size: 19px;
+    }
+
+    .vb-sankalp {
+        gap: 8px;
+    }
+
+    .vb-flag {
+        width: 72px;
+        height: 36px;
+    }
+
+    .vb-person {
+        display: none;
+    }
+
+    /* hide side images on small phones */
+    .vb-bottom-band {
+        height: 90px;
+        display: none
+    }
+
+    .about-pu .col-lg-7 {
+        padding-inline: 20px !important;
+    }
+
+    .about-eyebrow {
+        gap: 15px;
+        font-size: 30px;
+    }
+
+    .about-eyebrow::after {
+        width: 130px;
+    }
+
+    .about-title {
+        font-size: 30px;
+    }
+
+    .about-head {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+
+    .about-head .about-icon {
+        display: none;
+    }
+
+    .section-container {
+        padding: 0 10px;
+    }
+
+    .about-pu {
+        padding-bottom: 2rem !important;
+    }
+
+}
+
+/* 7) ≤ 375px --------------------------------------------------- */
+@media (max-width: 375px) {
+    .vb-logo {
+        height: 37px;
+    }
+
+    .navbar-section .container {
+        padding: 0 10px;
+        width: 100%;
+    }
+
+
+    .vb-call {
+        padding: 5px;
+    }
+
+
+    .vb-hero-inner {
+        padding-top: 3rem;
+    }
+
+    .vb-title-1 {
+        font-size: 35px;
+        letter-spacing: .5px;
+    }
+
+    .vb-title-2 {
+        font-size: 26px;
+    }
+
+    .vb-subtitle {
+        font-size: 16px;
+    }
+
+    .vb-tagline {
+        font-size: 18px;
+    }
+
+    .vb-caption {
+        font-size: 13px;
+    }
+
+    .vb-flag {
+        width: 64px;
+        height: 32px;
+    }
+
+    .vb-bottom-band {
+        height: 80px;
+    }
+
+    .section-container {
+        padding: 0 10px;
+    }
+
+    .about-pu {
+        padding-bottom: 1rem !important;
+    }
+
+    .vb-subtitle {
+        font-size: 20px;
+    }
+
+    .vb-tagline {
+        font-size: 25px;
+    }
+
+    .vb-caption {
+        font-size: 18px;
+    }
+}
