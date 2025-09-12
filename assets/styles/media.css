@@ -18,6 +18,10 @@
         font-size: 22px;
     }
 
+    .container-xxl {
+        max-width: 1400px;
+    }
+
 
 }
 
