@@ -1,0 +1,269 @@
+@import url('./styles.css');
+
+
+:root {
+    --blue: #1e66a5;
+    /* page background */
+    --orange: #f47d27;
+    /* bottom stripe */
+    --pill: #e53935;
+    /* call pill */
+    --text: #ffffff;
+}
+
+/* Reset + viewport */
+* {
+    box-sizing: border-box
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    -webkit-user-drag: none;
+    user-select: none
+}
+
+body {
+    background: var(--blue);
+    color: var(--text);
+    overflow: hidden;
+    font-family: var(--font-inter-bold);
+}
+
+/* Full-viewport wrapper */
+.ty-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    isolation: isolate;
+}
+
+/* Header */
+.ty-header {
+    position: absolute;
+    inset: 0 0 auto 0;
+    padding: clamp(12px, 2.2vh, 22px) max(16px, env(safe-area-inset-right)) 0 max(16px, env(safe-area-inset-left));
+    z-index: 2;
+}
+
+.ty-bar {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.ty-logo {
+    height: 54px;
+    width: auto
+}
+
+.ty-call {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--pill);
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 12px;
+    font-weight: 800;
+    box-shadow: 0 8px 20px rgba(229, 57, 53, .35);
+    transition: filter .2s ease, transform .2s ease;
+
+    font-family: var(--font-inter-bold);
+    font-size: 18px;
+
+    outline: none;
+    border: none;
+}
+
+
+.ty-call:hover {
+    filter: brightness(1.05);
+    transform: translateY(-1px)
+}
+
+.ty-call i {
+    font-size: 20px
+}
+
+/* Center content */
+.ty-center {
+    margin: auto;
+    /* centers both ways */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: clamp(16px, 3vw, 32px);
+    gap: clamp(10px, 2.5vh, 18px);
+    z-index: 1;
+}
+
+/* Your tick image */
+.ty-badge-img {
+    width: 175px;
+    height: auto;
+}
+
+.ty-title {
+    font-weight: 900;
+    font-size: 95px;
+    line-height: 1.05;
+    margin: 8px 0 0;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+    text-shadow: 0 3px 10px rgba(0, 0, 0, .25);
+    font-family: var(--font-bold);
+}
+
+.ty-sub {
+    font-size: 35px;
+    color: #e9f2ff;
+    margin: 0;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+}
+
+/* Bottom orange stripe */
+.ty-stripe {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 35px;
+    background: var(--orange);
+    z-index: 0;
+}
+
+/* Small-screen tweaks */
+
+
+@media (min-width : 567px) and (max-width : 992px) {
+    .ty-title {
+        font-size: 75px
+    }
+
+    .ty-sub {
+        font-size: 28px
+    }
+
+    .ty-badge-img {
+        width: 140px
+    }
+}
+
+@media (min-width : 476px) and (max-width : 566px) {
+    .ty-title {
+        font-size: 65px
+    }
+
+    .ty-sub {
+        font-size: 25px
+    }
+
+    .ty-badge-img {
+        width: 125px
+    }
+}
+
+
+@media (max-width: 475px) {
+    .ty-title {
+        font-size: 55px
+    }
+
+    .ty-sub {
+        font-size: 22px
+    }
+
+    .ty-badge-img {
+        width: 110px
+    }
+}
+
+
+
+/* header */
+
+@media (min-width: 480px) and (max-width: 767.98px) {
+    .ty-header {
+        padding: 14px max(16px, env(safe-area-inset-right)) 0 max(16px, env(safe-area-inset-left));
+    }
+
+    .ty-bar {
+        gap: 10px;
+    }
+
+    .ty-logo {
+        height: 44px;
+    }
+
+    .ty-call {
+        font-size: 15px;
+        padding: 8px 14px;
+        border-radius: 10px;
+        white-space: nowrap;
+    }
+
+    .ty-call i {
+        font-size: 18px;
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 479.98px) {
+    .ty-header {
+        padding: 12px max(12px, env(safe-area-inset-right)) 0 max(12px, env(safe-area-inset-left));
+    }
+
+    .ty-bar {
+        gap: 8px;
+    }
+
+    .ty-logo {
+        height: 43px;
+    }
+
+    .ty-call {
+        font-size: 14px;
+        padding: 8px 20px;
+        border-radius: 10px;
+    }
+
+    /* Optional: keep only the icon to save space on very small screens */
+    .ty-call span {
+        display: none;
+    }
+
+    .ty-call i {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 375px) {
+    .ty-logo {
+        height: 36px;
+    }
+
+    .ty-call {
+        font-size: 13px;
+        padding: 7px 13px;
+    }
+
+    .ty-call i {
+        font-size: 17px;
+    }
+}
