@@ -1,21 +1,21 @@
 @import url("./styles.css");
 
 
-/* ===== Portal header (scoped, won't clash with Bootstrap) ===== */
 :root {
     --portal-blue: #165f9c;
     --portal-red: #ef233c;
-    /* bright red for the pill */
 }
 
 img {
     user-select: none;
 }
 
-
+/* Base styles - Mobile First */
 .portal-container {
-    width: 1400px;
+    width: 100%;
+    max-width: 1400px;
     margin-inline: auto;
+    padding: 0 15px;
 }
 
 .portal-header {
@@ -24,12 +24,11 @@ img {
 }
 
 .portal-header-bar {
-    padding: 20px 0 35px;
+    padding: 15px 0 25px;
 }
 
 .portal-brand img {
-    height: 60px;
-    /* adjust to your logo */
+    height: 45px;
     width: auto;
     display: block;
 }
@@ -37,47 +36,60 @@ img {
 .portal-call {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
     background: var(--portal-red);
     color: #fff;
     text-decoration: none;
-    border-radius: 14px;
-    padding-block: 12px;
-    box-shadow: 0 10px 20px rgba(239, 35, 60, .25);
-    font-size: 19px;
+    border-radius: 12px;
+    padding: 10px 14px;
+    box-shadow: 0 8px 16px rgba(239, 35, 60, .25);
+    font-size: 16px;
     font-family: var(--font-inter-bold);
     font-weight: bold;
-    transition: background .3s, filter .3s;
+    transition: all .3s ease;
+    white-space: nowrap;
+}
+
+.portal-call i {
+    font-size: 18px;
+    flex-shrink: 0;
 }
 
 .portal-call:hover {
     filter: brightness(1.05);
     background: #c73649;
+    color: #fff;
+    text-decoration: none;
+}
+
+.portal-call:focus {
+    outline: 2px solid rgba(255, 255, 255, 0.5);
+    outline-offset: 2px;
 }
 
 .portal-title {
-    margin: 14px 0 4px;
+    margin: 10px 0 2px;
     text-align: center;
     color: #fff;
     font-weight: 800;
     letter-spacing: .2px;
-    font-size: 52px;
+    font-size: 32px;
     font-family: var(--font-bold);
+    line-height: 1.1;
+    word-wrap: break-word;
+    hyphens: auto;
 }
-
-
 
 
 
 /* Registration Main Content */
 .registration-main {
-    background: #f9f6f1;
     min-height: calc(100vh - 200px);
     padding: 40px 0;
 }
 
 .registration-container {
-    max-width: 1400px;
+    max-width: 100%;
     margin: 0 auto;
 }
 

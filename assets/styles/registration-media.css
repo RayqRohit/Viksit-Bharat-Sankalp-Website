@@ -1,0 +1,722 @@
+/* ===== Responsive Media Queries for Registration Form ===== */
+
+/* 1. Extra Large Screens (1440px and up) */
+@media (min-width: 1440px) {
+    .portal-container {
+        width: 100%;
+    }
+
+    .registration-container {
+        padding-inline: 20px;
+    }
+
+    .portal-title {
+        font-size: 64px;
+    }
+
+    
+
+    .section-title {
+        font-size: 38px;
+        margin-bottom: 35px;
+    }
+
+    .form-control,
+    .form-select {
+        padding: 16px 20px;
+        font-size: 17px;
+        min-height: 56px;
+    }
+
+    .form-label {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .registration-form .row {
+        --bs-gutter-x: 2.5rem;
+        --bs-gutter-y: 2rem;
+    }
+}
+
+/* 2. Large Desktop (1200px - 1399.98px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+
+    .registration-main {
+        margin-inline: 12px;
+    }
+
+    .portal-title {
+        font-size: 58px;
+    }
+
+    .registration-form-card {
+        padding: 80px 60px;
+        border-radius: 22px;
+    }
+
+    .section-title {
+        font-size: 36px;
+        margin-bottom: 32px;
+    }
+
+    .form-control,
+    .form-select {
+        padding: 14px 18px;
+        font-size: 16px;
+        min-height: 52px;
+    }
+
+    .form-label {
+        font-size: 17px;
+        margin-bottom: 9px;
+    }
+}
+
+/* 3. Desktop/Laptop (992px - 1199.98px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .registration-main {
+        margin-inline: 12px;
+    }
+
+    .portal-title {
+        font-size: 52px;
+    }
+
+    .registration-form-card {
+        padding: 70px 50px;
+    }
+
+    .section-title {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    .registration-form .row {
+        --bs-gutter-x: 1.8rem;
+        --bs-gutter-y: 1.5rem;
+    }
+}
+
+/* 4. Tablet (768px - 991.98px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .registration-main {
+        margin-inline: 12px;
+    }
+
+    .portal-header-bar {
+        padding: 15px 0 25px;
+    }
+
+    .portal-brand img {
+        height: 50px;
+    }
+
+    .portal-call {
+        font-size: 16px;
+        padding-block: 10px;
+        padding-inline: 16px;
+    }
+
+    .portal-title {
+        font-size: 42px;
+        margin: 10px 0 2px;
+    }
+
+    .registration-main {
+        padding: 30px 0;
+    }
+
+
+
+    .registration-form-card {
+        padding: 50px 25px;
+        border-radius: 18px;
+    }
+
+    .section-title {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+
+
+
+    /* Personal Details Grid - Switch to 2 columns */
+    .form-section.personal .form-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: normal;
+        row-gap: normal;
+    }
+
+    .form-section.personal .participant {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .form-section.personal .dob {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .form-section.personal .gender {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .form-section.personal .f-name {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .form-section.personal .m-name {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .form-section.personal .address {
+        grid-column: 2;
+        grid-row: 3 / span 2;
+    }
+
+    .form-section.personal .f-phone {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .form-section.personal .m-phone {
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    .form-section.personal .p-phone {
+        grid-column: 2;
+        grid-row: 5;
+    }
+
+    .form-section.personal .p-mail {
+        grid-column: 1 / span 2;
+        grid-row: 6;
+    }
+
+    /* Identification Grid - Switch to 2 columns */
+    .form-section.identification .id-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .form-section.identification .a-number {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .form-section.identification .zone {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .form-section.identification .a-photo {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .form-section.identification .u-photo {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .video-upload-wrapper {
+        width: 100%;
+        max-width: 400px;
+    }
+
+
+}
+
+/* 5. Large Mobile (480px - 767.98px) */
+@media (max-width: 767.98px) {
+
+
+    .portal-header-bar {
+        padding: 12px 0 20px;
+    }
+
+    .portal-brand img {
+        height: 45px;
+    }
+
+    .portal-call {
+        font-size: 15px;
+        padding-block: 8px;
+        padding-inline: 14px;
+    }
+
+    .portal-call span {
+        display: none;
+    }
+
+    .portal-title {
+        font-size: 32px;
+        margin: 8px 0 0;
+    }
+
+    .registration-main {
+        padding: 25px 0;
+    }
+
+    .registration-container {
+        padding: 0 12px;
+    }
+
+    .registration-form-card {
+        padding: 35px 20px;
+        border-radius: 15px;
+    }
+
+    .section-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .form-control,
+    .form-select {
+        padding: 12px 14px;
+        font-size: 15px;
+        min-height: 44px;
+    }
+
+    .form-label {
+        font-size: 15px;
+        margin-bottom: 6px;
+    }
+
+    .registration-form .row {
+        --bs-gutter-x: 1rem;
+        --bs-gutter-y: 1rem;
+    }
+
+    /* Switch all grids to single column */
+    .form-section.personal .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-section.personal .participant,
+    .form-section.personal .dob,
+    .form-section.personal .gender,
+    .form-section.personal .f-name,
+    .form-section.personal .m-name,
+    .form-section.personal .address,
+    .form-section.personal .f-phone,
+    .form-section.personal .m-phone,
+    .form-section.personal .p-phone,
+    .form-section.personal .p-mail {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    .form-section.identification .id-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .form-section.identification .a-number,
+    .form-section.identification .zone,
+    .form-section.identification .a-photo,
+    .form-section.identification .u-photo {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    .file-upload-wrapper {
+        min-height: 80px;
+        padding: 15px;
+    }
+
+    .video-upload-wrapper {
+        width: 100%;
+        height: 120px;
+    }
+
+    .submit-btn {
+        padding: 15px 40px;
+        font-size: 18px;
+    }
+}
+
+
+
+
+/* Additional responsive utilities for form sections */
+@media (max-width: 767.98px) {
+    .form-section {
+        margin-bottom: 30px;
+    }
+
+    .academic,
+    .identification,
+    .university-contact,
+    .video-upload {
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 479.98px) {
+    .form-section {
+        margin-bottom: 25px;
+    }
+
+    .academic,
+    .identification,
+    .university-contact,
+    .video-upload {
+        padding: 15px 0;
+    }
+}
+
+/* Responsive adjustments for file upload areas */
+@media (max-width: 767.98px) {
+
+    .file-upload-wrapper,
+    .video-upload-wrapper {
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .file-input,
+    .video-input {
+        cursor: pointer;
+    }
+}
+
+/* Focus states for better accessibility on mobile */
+@media (max-width: 767.98px) {
+
+    .form-control:focus,
+    .form-select:focus {
+        box-shadow: 0 0 0 0.2rem rgba(22, 95, 156, 0.25);
+        border-color: var(--vb-blue);
+    }
+}
+
+/* Landscape orientation adjustments for mobile devices */
+@media (max-width: 767.98px) and (orientation: landscape) {
+    .portal-title {
+        font-size: 20px;
+        margin: 2px 0 0;
+    }
+
+    .registration-form-card {
+        padding: 20px 25px;
+    }
+
+    .section-title {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+}
+
+
+
+
+/* header section */
+
+
+
+
+/* 2. Large Desktop (1200px - 1399.98px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .portal-container {
+        padding: 0 25px;
+    }
+
+    .portal-header-bar {
+        padding: 22px 0 25px;
+    }
+
+    .portal-brand img {
+        height: 65px;
+    }
+
+    .portal-call {
+        gap: 11px;
+        padding: 13px 18px;
+        border-radius: 15px;
+        font-size: 20px;
+        box-shadow: 0 11px 22px rgba(239, 35, 60, .25);
+    }
+
+    .portal-call i {
+        font-size: 22px;
+    }
+
+    .portal-title {
+        font-size: 45px;
+        margin: 25px 0 5px;
+    }
+}
+
+/* 3. Desktop/Laptop (992px - 1199.98px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .portal-container {
+        padding: 0 20px;
+    }
+
+    .portal-header-bar {
+        padding: 20px 0 25px;
+    }
+
+    .portal-brand img {
+        height: 60px;
+    }
+
+    .portal-call {
+        gap: 10px;
+        padding: 12px 16px;
+        border-radius: 14px;
+        font-size: 19px;
+        box-shadow: 0 10px 20px rgba(239, 35, 60, .25);
+    }
+
+    .portal-call i {
+        font-size: 20px;
+    }
+
+    .portal-title {
+        font-size: 45px;
+        margin: 30px 0 4px;
+    }
+}
+
+/* 4. Tablet (768px - 991.98px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .portal-container {
+        padding: 0 18px;
+    }
+
+    .portal-header-bar {
+        padding: 18px 0 20px;
+    }
+
+    .portal-brand img {
+        height: 55px;
+    }
+
+    .portal-call {
+        gap: 9px;
+        padding: 11px 15px;
+        border-radius: 13px;
+        font-size: 17px;
+        box-shadow: 0 8px 18px rgba(239, 35, 60, .25);
+    }
+
+    .portal-call i {
+        font-size: 19px;
+    }
+
+    .portal-title {
+        font-size: 44px;
+        margin: 30px 0 3px;
+    }
+}
+
+/* 5. Large Mobile (480px - 767.98px) */
+@media (min-width: 480px) and (max-width: 767.98px) {
+    .portal-container {
+        padding: 0 16px;
+    }
+
+    .portal-header-bar {
+        padding: 15px 0 25px;
+    }
+
+    .portal-brand img {
+        height: 50px;
+    }
+
+    .portal-call {
+        gap: 8px;
+        padding: 10px 14px;
+        border-radius: 12px;
+        font-size: 16px;
+        box-shadow: 0 6px 16px rgba(239, 35, 60, .25);
+    }
+
+    .portal-call i {
+        font-size: 18px;
+    }
+
+    /* Hide phone number text on smaller screens but keep icon */
+    .portal-call-text {
+        display: block;
+        font-size: 15px;
+    }
+
+    .portal-title {
+        font-size: 36px;
+        margin: 30px 0 2px;
+    }
+}
+
+/* 6. Small Mobile (320px - 479.98px) */
+@media (min-width: 320px) and (max-width: 479.98px) {
+    .portal-container {
+        padding: 0 12px;
+    }
+
+    .portal-header-bar {
+        padding: 12px 0 20px;
+    }
+
+    .portal-brand img {
+        height: 42px;
+    }
+
+    .portal-call {
+        gap: 6px;
+        padding: 8px 12px;
+        border-radius: 10px;
+        font-size: 14px;
+        box-shadow: 0 4px 12px rgba(239, 35, 60, .25);
+    }
+
+    .portal-call i {
+        font-size: 16px;
+    }
+
+    /* Hide phone number text, show only icon */
+    .portal-call-text {
+        display: none;
+    }
+
+    .portal-title {
+        font-size: 30px;
+        margin: 30px 0 1px;
+        word-break: break-word;
+    }
+}
+
+/* 7. Extra Small Mobile (max-width: 375px) */
+@media (max-width: 375px) {
+    .portal-container {
+        padding: 0 10px;
+    }
+
+    .portal-header-bar {
+        padding: 10px 0 18px;
+    }
+
+    .portal-brand img {
+        height: 38px;
+    }
+
+    .portal-call {
+        gap: 4px;
+        padding: 7px 10px;
+        border-radius: 8px;
+        font-size: 12px;
+        box-shadow: 0 3px 10px rgba(239, 35, 60, .25);
+        min-width: 44px;
+        /* Ensure touch target is accessible */
+        justify-content: center;
+    }
+
+    .portal-call i {
+        font-size: 16px;
+    }
+
+    /* Hide phone number text, show only icon */
+    .portal-call-text {
+        display: none;
+    }
+
+    .portal-title {
+        font-size: 24px;
+        margin: 30px 0 0;
+        word-break: break-word;
+        line-height: 1.2;
+    }
+}
+
+/* Landscape orientation adjustments for mobile */
+@media (max-width: 767.98px) and (orientation: landscape) {
+    .portal-header-bar {
+        padding: 8px 0 15px;
+    }
+
+    .portal-brand img {
+        height: 35px;
+    }
+
+    .portal-title {
+        font-size: 22px;
+        margin: 4px 0 0;
+    }
+
+    .portal-call {
+        padding: 6px 8px;
+        font-size: 12px;
+    }
+}
+
+/* High-resolution display adjustments */
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    .portal-brand img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* Focus and accessibility improvements */
+.portal-brand:focus {
+    outline: 2px solid rgba(255, 255, 255, 0.5);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+.portal-brand:focus img {
+    opacity: 0.9;
+}
+
+/* Hover states for non-touch devices */
+@media (hover: hover) {
+    .portal-brand:hover img {
+        transform: scale(1.02);
+        transition: transform 0.2s ease;
+    }
+
+    .portal-call:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 12px 25px rgba(239, 35, 60, .35);
+    }
+}
+
+/* Print styles */
+@media print {
+    .portal-header {
+        background: white !important;
+        color: black !important;
+        box-shadow: none;
+    }
+
+    .portal-call {
+        background: white !important;
+        color: black !important;
+        border: 1px solid black;
+        box-shadow: none;
+    }
+
+    .portal-title {
+        color: black !important;
+        font-size: 24px !important;
+    }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+
+    .portal-call,
+    .portal-brand img {
+        transition: none;
+    }
+}

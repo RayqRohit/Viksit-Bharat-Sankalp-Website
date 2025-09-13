@@ -144,6 +144,96 @@
     }
 
 
+    /* objectives section */
+
+    .obj-title {
+        font-size: 52px;
+    }
+
+    .obj-title-row {
+        gap: 44px;
+    }
+
+    .obj-title-row::before,
+    .obj-title-row::after {
+        flex: 1 1 230px;
+    }
+
+    .obj-list li {
+        grid-template-columns: 46px 1fr;
+    }
+
+    .obj-list .num {
+        width: 46px;
+        height: 46px;
+    }
+
+    .obj-list .num strong {
+        font-size: 23px;
+    }
+
+    .obj-right p {
+        font-size: 18px;
+    }
+
+    .obj-mark {
+        max-width: 440px;
+    }
+
+
+    /* zone section */
+
+    .zone-callout {
+        padding: 80px 50px;
+        gap: 50px;
+        grid-template-columns: auto minmax(300px, 1fr) 1px minmax(360px, 1.2fr);
+    }
+
+    .zone-icon {
+        width: 140px;
+    }
+
+
+
+
+    .zone-table thead th {
+        font-size: 18px;
+        padding: 18px 16px;
+    }
+
+    .zone-table tbody td {
+        font-size: 17px;
+        padding: 20px 16px;
+    }
+
+    .zone-table colgroup col:nth-child(1) {
+        width: 100px !important;
+    }
+
+    .zone-table colgroup col:nth-child(2) {
+        width: 180px !important;
+    }
+
+
+
+    /* portal section */
+
+    .portal-card {
+        padding: 56px 40px 0 56px;
+        gap: 28px;
+    }
+
+    .portal-title {
+        font-size: 96px;
+    }
+
+    .portal-img {
+        height: 560px;
+    }
+
+    .portal-stripe {
+        left: 38%;
+    }
 }
 
 /* 3) 992px–1199.98px ------------------------------------------ */
@@ -172,12 +262,8 @@
 
     /* hero section */
 
-    .vb-hero {
-        height: 90vh;
-    }
-
     .vb-hero-inner {
-        padding-top: 2.5rem;
+        padding-top: 5.5rem;
     }
 
     .vb-title-1 {
@@ -228,6 +314,110 @@
         margin: 0 auto;
         max-height: 400px;
     }
+
+    /* objectives section */
+
+    .obj-title {
+        font-size: 46px;
+    }
+
+    .obj-title-row {
+        gap: 36px;
+    }
+
+    .obj-title-row::before,
+    .obj-title-row::after {
+        flex: 1 1 200px;
+    }
+
+    .obj-list li {
+        grid-template-columns: 44px 1fr;
+        column-gap: 18px;
+    }
+
+    .obj-list .num {
+        width: 44px;
+        height: 44px;
+    }
+
+    .obj-list .num strong {
+        font-size: 22px;
+    }
+
+    .obj-list p {
+        font-size: 17.5px;
+    }
+
+    .obj-right p {
+        font-size: 18px;
+    }
+
+    .obj-mark {
+        max-width: 420px;
+        margin-top: 56px;
+    }
+
+
+    /* zone section */
+
+    .zone-callout {
+        padding: 64px 40px;
+        gap: 40px;
+        grid-template-columns: auto minmax(260px, 1fr) 1px minmax(320px, 1.15fr);
+    }
+
+    .zone-icon {
+        width: 120px;
+    }
+
+    .zone-title {
+        font-size: 38px;
+    }
+
+    .zone-text {
+        font-size: 17px;
+    }
+
+    .zone-table thead th {
+        font-size: 17px;
+        padding: 16px 14px;
+    }
+
+    .zone-table tbody td {
+        font-size: 16.5px;
+        padding: 18px 14px;
+    }
+
+    .zone-table colgroup col:nth-child(1) {
+        width: 90px !important;
+    }
+
+    .zone-table colgroup col:nth-child(2) {
+        width: 150px !important;
+    }
+
+
+    /* portal section */
+
+    .portal-card {
+        padding: 48px 32px 0 48px;
+        gap: 24px;
+    }
+
+    .portal-title {
+        font-size: 70px;
+    }
+
+    .portal-img {
+        height: 465px;
+    }
+
+    .portal-stripe {
+        left: 36%;
+    }
+
+
+
 }
 
 /* 4) 768px–991.98px ------------------------------------------- */
@@ -265,7 +455,7 @@
 
 
     .vb-hero {
-        height: 80vh;
+        height: calc(100vh - 70px);
     }
 
     .vb-hero-inner {
@@ -340,6 +530,192 @@
         padding-top: 20px !important;
     }
 
+
+    /* objectives section */
+
+    .obj-title {
+        font-size: 40px;
+    }
+
+    .obj-title-row {
+        gap: 28px;
+    }
+
+    .obj-title-row::before,
+    .obj-title-row::after {
+        flex: 1 1 180px;
+    }
+
+    .obj-list {
+        margin-bottom: 1rem !important;
+    }
+
+    .obj-list li {
+        grid-template-columns: 38px 1fr;
+        column-gap: 16px;
+    }
+
+    .obj-list .num {
+        width: 38px;
+        height: 38px;
+        border-radius: 6px;
+    }
+
+    .obj-list .num strong {
+        font-size: 20px;
+        line-height: 1.9;
+    }
+
+    .obj-list p {
+        font-size: 16.5px;
+    }
+
+    .obj-right {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .obj-right p {
+        font-size: 17px;
+    }
+
+    .obj-mark {
+        max-width: 420px;
+        margin-top: 35px;
+        margin-inline: auto;
+    }
+
+    .num-column,
+    .p-column {
+        padding-inline: 0 !important;
+    }
+
+
+    /* structure */
+
+    .structure-main-title {
+        font-size: 40px;
+    }
+
+
+    /* format section */
+
+    .format-title {
+        font-size: 40px;
+    }
+
+    /* zone section */
+
+    .zone-callout {
+        padding: 44px 28px;
+        gap: 24px;
+        grid-template-columns: minmax(80px, 110px) 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .zone-callout .zone-icon {
+        grid-column: 1 / 2;
+        grid-row: 1;
+        width: 110px;
+    }
+
+    .zone-callout .zone-title {
+        grid-column: 2 / 3;
+        grid-row: 1;
+        font-size: 34px;
+    }
+
+    .zone-callout .zone-text {
+        grid-column: 1 / 3;
+        grid-row: 2;
+        font-size: 16.5px;
+    }
+
+    .zone-callout .zone-divider {
+        display: none;
+    }
+
+    .zone-table {
+        font-size: 15.5px;
+    }
+
+    .zone-table thead th {
+        font-size: 16px;
+        padding: 14px 12px;
+        white-space: normal;
+    }
+
+    .zone-table tbody td {
+        padding: 14px 12px;
+        word-break: break-word;
+    }
+
+    .zone-table colgroup col:nth-child(1) {
+        width: 84px !important;
+    }
+
+    .zone-table colgroup col:nth-child(2) {
+        width: 140px !important;
+    }
+
+    /* rules and regulations */
+
+    .rules-section {
+        padding-top: 0rem !important;
+    }
+
+
+
+
+    /* portal section */
+    .portal-card {
+        grid-template-columns: 1fr;
+        padding: 40px 28px 28px;
+        text-align: center;
+    }
+
+    .portal-copy {
+        order: 1;
+    }
+
+    .portal-art {
+        order: 2;
+        min-height: auto;
+    }
+
+    .portal-title {
+        font-size: 64px;
+    }
+
+    .reg-btn {
+        font-size: 22px;
+        padding: 1rem 2rem;
+    }
+
+    .portal-stripe {
+        left: 0;
+        width: 100%;
+        top: 0%;
+        bottom: 0%;
+        opacity: .35;
+    }
+
+    .portal-img {
+        margin: 12px auto 0;
+        height: 440px;
+    }
+
+
+
+    /* contact section */
+
+    .contact-info {
+        padding-left: 0;
+        border-left: 0;
+        padding-top: 30px;
+
+    }
 
 }
 
@@ -447,6 +823,207 @@
     .about-eyebrow::after {
         width: 150px;
     }
+
+
+    /* objectives */
+
+    .obj-title {
+        font-size: 36px;
+    }
+
+    .obj-list {
+        margin-bottom: 1rem !important;
+    }
+
+    .obj-title-row {
+        gap: 20px;
+    }
+
+    .obj-right {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 35px;
+    }
+
+
+    .obj-title-row::before,
+    .obj-title-row::after {
+        flex: 1 1 150px;
+    }
+
+    .obj-list li {
+        grid-template-columns: 34px 1fr;
+        column-gap: 14px;
+    }
+
+    .obj-list .num {
+        width: 34px;
+        height: 34px;
+    }
+
+    .obj-list .num strong {
+        font-size: 18px;
+        line-height: 1.8;
+    }
+
+    .obj-list p {
+        font-size: 16px;
+    }
+
+    .obj-right p {
+        font-size: 16.5px;
+        text-align: justify;
+    }
+
+    .obj-mark {
+        max-width: 345px;
+        margin-top: 25px;
+        margin-inline: auto;
+    }
+
+    .num-column,
+    .p-column {
+        padding-inline: 0 !important;
+    }
+
+    .section-container {
+        padding: 0 12px;
+    }
+
+
+    /* structure */
+
+    .structure-main-title {
+        font-size: 36px;
+    }
+
+    .structure-card {
+        min-height: 100%;
+    }
+
+
+    /* format section */
+
+    .format-title {
+        font-size: 33px;
+    }
+
+    .format-sub {
+        text-align: justify;
+    }
+
+
+    /* zone section */
+
+    .zone-callout {
+        padding: 32px 20px;
+        gap: 18px;
+        grid-template-columns: 1fr;
+    }
+
+    .zone-callout .zone-icon {
+        width: 125px;
+        margin-inline: auto;
+        margin-bottom: 15px;
+    }
+
+    .zone-callout .zone-title {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .zone-callout .zone-text {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .zone-callout .zone-divider {
+        display: none;
+    }
+
+    .zone-table {
+        font-size: 15px;
+        min-width: 560px;
+    }
+
+    .zone-table thead th {
+        font-size: 15.5px;
+        padding: 12px;
+        white-space: normal;
+    }
+
+    .zone-table tbody td {
+        padding: 12px;
+    }
+
+    .zone-table colgroup col:nth-child(1) {
+        width: 72px !important;
+    }
+
+    .zone-table colgroup col:nth-child(2) {
+        width: 120px !important;
+    }
+
+    .zone-table-card {
+        overflow: auto;
+    }
+
+    /* portal section */
+
+
+    /* portal section */
+    .portal-card {
+        grid-template-columns: 1fr;
+        padding: 40px 28px 28px;
+        text-align: center;
+    }
+
+    .portal-copy {
+        order: 1;
+    }
+
+    .portal-art {
+        order: 2;
+        min-height: auto;
+    }
+
+    .portal-title {
+        font-size: 50px;
+    }
+
+    .reg-btn {
+        font-size: 22px;
+        padding: 1rem 2rem;
+    }
+
+    .portal-stripe {
+        left: 0;
+        width: 100%;
+        top: 0%;
+        bottom: 0%;
+        opacity: .35;
+    }
+
+    .portal-img {
+        margin: 12px auto 0;
+        height: 350px;
+    }
+
+
+
+    /* contact section */
+
+    .contact-info {
+        padding-left: 0;
+        border-left: 0;
+        padding-top: 30px;
+
+    }
+
+    .contact-card {
+        padding: 30px;
+    }
+
 }
 
 /* 6) 320px–479.98px ------------------------------------------- */
@@ -494,12 +1071,14 @@
     }
 
     .vb-title-1 {
-        font-size: 40px;
+        font-size: 42px;
         margin-bottom: 10px !important;
+        font-weight: 800;
     }
 
     .vb-title-2 {
-        font-size: 35px;
+        font-size: 39px;
+        font-weight: 800;
     }
 
     .vb-subtitle {
@@ -508,7 +1087,8 @@
     }
 
     .vb-tagline {
-        font-size: 30px;
+        font-size: 32px;
+        font-weight: 800;
     }
 
     .vb-caption {
@@ -568,6 +1148,238 @@
         padding-bottom: 2rem !important;
     }
 
+    /* objectives */
+
+    .obj-section {
+        padding-top: 1rem !important;
+    }
+
+    .obj-title {
+        font-size: 28px;
+    }
+
+    .obj-title-row {
+        gap: 12px;
+    }
+
+    .obj-title-row::before,
+    .obj-title-row::after {
+        display: none;
+    }
+
+    /* compact header on tiny screens */
+
+    .obj-list li {
+        grid-template-columns: 28px 1fr;
+        column-gap: 10px;
+    }
+
+    .obj-list .num {
+        width: 28px;
+        height: 28px;
+    }
+
+    .obj-list .num strong {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+
+
+    .obj-right p {
+        font-size: 17px;
+    }
+
+    .obj-mark {
+        max-width: 260px;
+        margin-top: 22px;
+    }
+
+
+    .obj-list {
+        margin-bottom: 1rem !important;
+    }
+
+    .obj-right {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .obj-mark {
+        max-width: 420px;
+        margin-top: 35px;
+        margin-inline: auto;
+    }
+
+    .num-column,
+    .p-column {
+        padding-inline: 0 !important;
+    }
+
+    .obj-title {
+        font-size: 35px;
+        margin-bottom: 15px !important;
+    }
+
+
+
+    /* structure */
+
+    .structure-main-title {
+        font-size: 30px;
+    }
+
+    .structure-card .card-body {
+        padding: 15px 17px 17px;
+    }
+
+    .structure-card .card-body p {
+        font-size: 16px;
+    }
+
+
+    /* format  */
+
+    /* format section */
+
+    .format-title {
+        font-size: 33px;
+    }
+
+    .format-sub {
+        text-align: justify;
+    }
+
+
+
+    /* zone section  */
+
+    .zone-callout {
+        padding: 26px 16px;
+        gap: 21px;
+        grid-template-columns: 1fr;
+    }
+
+    .zone-callout .zone-icon {
+        width: 115px;
+        margin-inline: auto;
+    }
+
+    .zone-callout .zone-title {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .zone-callout .zone-text {
+        font-size: 15.5px;
+        text-align: left;
+    }
+
+    .zone-callout .zone-divider {
+        display: none;
+    }
+
+    .zone-table {
+        font-size: 14px;
+        min-width: 520px;
+    }
+
+    .zone-table thead th {
+        font-size: 14.5px;
+        padding: 11px;
+    }
+
+    .zone-table tbody td {
+        padding: 11px;
+    }
+
+    .zone-table colgroup col:nth-child(1) {
+        width: 64px !important;
+    }
+
+    .zone-table colgroup col:nth-child(2) {
+        width: 110px !important;
+    }
+
+    .zone-callout .zone-text {
+        text-align: justify;
+    }
+
+
+    /* rules and regulations */
+
+    .rules-section {
+        padding-block: 0rem !important;
+    }
+
+    .rules-row {
+        gap: 25px !important;
+    }
+
+    /* portal section */
+    .portal-card {
+        grid-template-columns: 1fr;
+        padding: 40px 28px 28px;
+        text-align: center;
+
+        gap: 35px;
+    }
+
+    .portal-copy {
+        order: 1;
+    }
+
+    .portal-art {
+        order: 2;
+        min-height: auto;
+    }
+
+    .portal-title {
+        font-size: 40px;
+    }
+
+    .reg-btn {
+        font-size: 22px;
+        padding: 1rem 2rem;
+    }
+
+    .portal-stripe {
+        left: 0;
+        width: 100%;
+        top: 0%;
+        bottom: 0%;
+        opacity: .35;
+    }
+
+    .portal-img {
+        margin: 12px auto 0;
+        height: 350px;
+    }
+
+
+
+    /* contact section */
+
+
+    .contact-main-title {
+        font-size: 32px;
+    }
+
+    .contact-info {
+        padding-left: 0;
+        border-left: 0;
+        padding-top: 30px;
+
+    }
+
+    .contact-card {
+        padding: 30px;
+    }
+
+    .contact-item {
+        flex-direction: column;
+    }
 }
 
 /* 7) ≤ 375px --------------------------------------------------- */
@@ -639,5 +1451,45 @@
 
     .vb-caption {
         font-size: 18px;
+    }
+
+
+    /* zone table */
+
+    .zone-table {
+        font-size: 13.5px;
+    }
+
+    .zone-table thead th,
+    .zone-table tbody td {
+        padding: 9px 8px;
+    }
+
+    .zone-table colgroup col:nth-child(1) {
+        width: 56px !important;
+    }
+
+    .zone-table colgroup col:nth-child(2) {
+        width: 108px !important;
+    }
+
+    .zone-table th,
+    .zone-table td {
+        white-space: normal;
+        word-break: break-word;
+        hyphens: auto;
+        line-height: 1.48;
+    }
+
+    .zone-table tbody tr {
+        border-bottom: 1px solid #f0f3f8;
+    }
+
+
+
+    /* contact section */
+
+    .contact-item {
+        flex-direction: column;
     }
 }
