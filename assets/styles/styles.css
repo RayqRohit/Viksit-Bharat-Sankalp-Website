@@ -967,6 +967,7 @@ img {
     letter-spacing: .2px;
     font-size: 105px;
     margin: 0 0 20px;
+    font-family: var(--font-bold);
 }
 
 .reg-btn {
