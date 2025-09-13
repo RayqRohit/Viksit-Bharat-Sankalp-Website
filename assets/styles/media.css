@@ -1173,7 +1173,7 @@
         display: none;
     }
 
-    .about-copy{
+    .about-copy {
         font-size: 15px;
     }
 
@@ -1197,7 +1197,7 @@
 
 
     .obj-right p {
-        font-size: 17px;
+        font-size: 15px;
     }
 
     .obj-mark {
@@ -1217,7 +1217,7 @@
     }
 
     .obj-mark {
-        max-width: 420px;
+        max-width: 300px;
         margin-top: 35px;
         margin-inline: auto;
     }
@@ -1245,9 +1245,12 @@
     }
 
     .structure-card .card-body p {
-        font-size: 16px;
+        font-size: 15px;
     }
 
+    .structure-card {
+        min-height: auto;
+    }
 
     /* format  */
 
@@ -1259,6 +1262,14 @@
 
     .format-sub {
         text-align: justify;
+    }
+
+    .format-sub {
+        font-size: 16px;
+    }
+
+    .format-list li{
+        font-size: 14px;
     }
 
 
@@ -1282,7 +1293,7 @@
     }
 
     .zone-callout .zone-text {
-        font-size: 15.5px;
+        font-size: 14px;
         text-align: left;
     }
 
@@ -1292,7 +1303,7 @@
 
     .zone-table {
         font-size: 14px;
-        min-width: 520px;
+        /* min-width: 520px; */
     }
 
     .zone-table thead th {
@@ -1325,6 +1336,10 @@
 
     .rules-row {
         gap: 25px !important;
+    }
+
+    .rules-list li {
+        font-size: 15px;
     }
 
     /* portal section */
@@ -1389,6 +1404,13 @@
 
     .contact-item {
         flex-direction: column;
+    }
+
+
+    /* new code  */
+
+    .obj-list p {
+        font-size: 14px;
     }
 }
 

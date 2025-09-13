@@ -48,7 +48,7 @@
 }
 
 
-body {
+body,html {
     overflow-x: hidden;
 }
 
@@ -807,7 +807,7 @@ img {
 .zone-table-card {
     background: #fff;
     box-shadow: 0 16px 30px rgba(0, 0, 0, .08);
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 
