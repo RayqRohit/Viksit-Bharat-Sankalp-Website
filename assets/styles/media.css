@@ -1268,7 +1268,7 @@
         font-size: 16px;
     }
 
-    .format-list li{
+    .format-list li {
         font-size: 14px;
     }
 
@@ -1414,6 +1414,48 @@
     }
 }
 
+@media (max-width: 400px) {
+    .portal-card {
+        grid-template-columns: 1fr;
+        padding: 40px 28px 28px;
+        text-align: center;
+
+        gap: 35px;
+    }
+
+    .portal-copy {
+        order: 1;
+    }
+
+    .portal-art {
+        order: 2;
+        min-height: auto;
+    }
+
+    .portal-title {
+        font-size: 40px;
+    }
+
+    .reg-btn {
+        font-size: 22px;
+        padding: 1rem 2rem;
+    }
+
+    .portal-stripe {
+        left: 0;
+        width: 100%;
+        top: 0%;
+        bottom: 0%;
+        opacity: .35;
+    }
+
+    .portal-img {
+        margin: 12px auto 0;
+        height: 300px;
+    }
+
+}
+
 /* 7) ≤ 375px --------------------------------------------------- */
 @media (max-width: 375px) {
     .vb-logo {
@@ -1516,6 +1558,7 @@
     .zone-table tbody tr {
         border-bottom: 1px solid #f0f3f8;
     }
+
 
 
 
